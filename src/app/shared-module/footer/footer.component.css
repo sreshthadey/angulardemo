@@ -1,7 +1,10 @@
 footer {
     display: block;
     text-align: center;
-    padding: 3px;
+    
     background-color: #D3D3D3;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     color: white;
 }

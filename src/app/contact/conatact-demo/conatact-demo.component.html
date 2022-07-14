@@ -1,0 +1,30 @@
+<form [formGroup]="contactDetailsForm" (ngSubmit)="onsubmit()">
+    <div>
+        <input type = "text"
+        [formControl]="nameFormControl"
+        placeholder="*Full Name">
+    </div>
+    <div>
+        <input type = "email"
+        [formControl]="emailFormControl"
+        placeholder="*Email ID">
+    </div>
+    <div>
+        <select formControlName="code">
+            <option selected>+91</option>
+            <option>+42</option>
+            <option>+81</option>
+        </select>
+        <input type = "tel"
+        [formControl]="PhoneNumberFormControl"
+        placeholder="*Phone Nmuber">
+    </div>
+    <div>
+        <textarea type = "text"
+        [formControl]="messageFormControl"
+        placeholder="*Message"
+        ></textarea>
+    </div>
+    <button type="submit"> Submit </button>
+
+</form>

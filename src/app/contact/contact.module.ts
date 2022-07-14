@@ -3,16 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactComponent } from './contact/contact.component';
-
+import {BmxFormModule} from 'ngx-bmx-components';
+import { ConatactDemoComponent } from './conatact-demo/conatact-demo.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    ContactComponent
+    ContactComponent,
+    ConatactDemoComponent
   ],
   imports: [
     CommonModule,
-    ContactRoutingModule
+    ContactRoutingModule,
+    BmxFormModule,
+    ReactiveFormsModule
   ]
 })
 export class ContactModule { }
